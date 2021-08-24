@@ -1,0 +1,44 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:jsx-a11y/recommended",
+        "airbnb"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "jsx-a11y",
+        "react"
+    ],
+    "rules": {
+        "array-bracket-newline": [1, {"minItems":  2}],
+        "array-element-newline": [1, {"minItems":  2}],
+        "indent": [2, 4],
+        "multiline-ternary": [1, "always-multiline"],
+        "no-multiple-empty-lines": [1, { "max":  1 }],
+        "object-curly-newline": [1, { "minProperties": 2, "multiline": true }],
+        "object-property-newline": [1, { "allowAllPropertiesOnSameLine":  false}],
+        "operator-linebreak": [1, "before"],
+        "react/jsx-curly-spacing": [1, {"when": "always"}],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/jsx-indent": [2, 4],
+        "react/jsx-indent-props": [2, 4],
+        "react/jsx-max-props-per-line": [1, { "maximum": 1, "when": "always" }],
+        "react/jsx-child-element-spacing": [1],
+        "jsx-a11y/media-has-caption": [0],
+        "react/no-this-in-sfc": [0]
+    }
+}
